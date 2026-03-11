@@ -11,6 +11,8 @@ curl -X POST https://TU_APP.azurewebsites.net/urls \
   -d '{"url": "[https://www.githubcommunity.es](https://www.githubcommunity.es)"}'
 ```
 
+O puedes acceder a la documentación dinámica con ```[enlace de la API]/scalar```
+
 ## 🔐 ¿Cómo puedo obtener los secretos de Azure?
 
 Como ya deberías saber, para que tu **API** funcione correctamente, vas a necesitar tres valores muy importantes: el `subscriptionId`, el `tenantId` y el `clientId`. Normalmente, estos se pueden conseguir en el apartado de **Microsoft Entra ID** y viendo los datos que te da el Dashboard de tu **App Service**, pero ¿qué te creías que iba a ser tan fácil? La UMA siempre hace de las suyas y esta vez nos prohíbe el acceso a ello. Aunque podemos usar un **trukele** (probablemente, un fallo de seguridad garrafal) para conseguir esta info tan preciada.

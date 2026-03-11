@@ -7,8 +7,8 @@ builder.Services.AddOpenApi("v1");
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.MapOpenApi();
     app.MapScalarApiReference(options =>
     {
@@ -22,7 +22,7 @@ if (app.Environment.IsDevelopment())
             options.AddServer($"https://{codespaceName}-{port}.{domain}");
         }
     });
-}
+// }
 
 
 app.MapGet("/", () => "URL SHORTENER");
